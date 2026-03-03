@@ -1,12 +1,12 @@
-
+from menu import menu_malteadas
 
 def malteadas():
     while True:
-        # Mostrar menu
+        menu_malteadas()
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-            #Se tiene que mostrar el menú
+            #Se tiene que mostrar las malteadas
             pass
         elif opcion == "2":
             # Tiene que mostrar el historial de las malteadas compradas

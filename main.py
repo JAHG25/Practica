@@ -1,4 +1,6 @@
 from menu import menu_malteadas
+from malteadas import pedido_malteadas
+from historial import ver_historial
 
 def malteadas():
     while True:
@@ -6,13 +8,11 @@ def malteadas():
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-            #Se tiene que mostrar las malteadas
-            pass
+            pedido_malteadas()
         elif opcion == "2":
-            # Tiene que mostrar el historial de las malteadas compradas
-            pass
+            ver_historial()
         elif opcion == "3":
-            print("Gracias por su preferencia, vuela pronto.")
+            print("Gracias por su preferencia, vuelva pronto.")
             break
         else:
             print("Opción no válida, intente con alguna de las opciones propuestas.")

@@ -1,3 +1,5 @@
+# Practica 1
+Hola
 # CÓDIGO MÁQUINA DE MALTEADAS
 
 El programa presentado es un código para una máquina de malteadas, la cual nos ofrece un menú de bienvenida,

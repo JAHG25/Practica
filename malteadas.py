@@ -1,3 +1,5 @@
+ARCHIVO_PEDIDO = "pedidos.txt"
+
 def pedido_malteadas():
     print("\n Elija la malteada de su preferencia")
     print("1. Malteada de chocolate")
@@ -5,7 +7,7 @@ def pedido_malteadas():
     print("3. Malteada de fresa")
     print("4. Malteada de galleta")
 
-    opcion = input("Elija una opcion: ")
+    opcion = input("Elija una opción: ")
 
     malteadas = {
         "1" : "Chocolate",
@@ -16,8 +18,9 @@ def pedido_malteadas():
 
     if opcion in malteadas:
         malteada_elegida = malteadas[opcion]
-        print("Eligió la malteda de " + malteada_elegida + ", se esta preparando su malteada.")
-
+        print("Ha elegido una malteada de " + malteada_elegida + ", su malteada esta siendo preparada")
+        with open(ARCHIVO_PEDIDO, "a", encoding="utf-8") as archivo:
+            archivo.write(malteada_elegida + "\n")
     else:
-        print("Opción no válida, seleccione otra opcion.")
+        print("Opción no válida, seleccione otra opción.")
 
